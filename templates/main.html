@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Pic Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/bootstrap.css" />
+    
+    <!-- main css -->
+    <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+   
+    <section class="home_banner_area">
+        <div class ="container">          
+          <div class ="row">
+            <div class="container-fluid h-150 bg-dark text-dark">
+              <div class="row justify-content-center align-items-center">
+                   
+              </div>
+              <br/>
+              <div class="row justify-content-center align-items-center h-100">
+                <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                  <div class ="text-center"><h2>HI</h2></div>
+                  <h4 class="text-center">{% include "includes/msg.html" %}</h4>   
+                  <form action="/register" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                      <input type="text" id="name" name="name" class="form-control" placeholder="name" required autofocus>
+                    </div>
+                    <div class="form-group">
+                      <input type="file" id="photo" name="photo" accept="image/*" class="form-control">
+                    </div>
+                    <div class ="form-group">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Submit</button>
+                    </div>
+            
+                  </form>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+    <script src="static/bootstrap.min.js"></script>
+    <script src="static/main.js"></script>      
+</body>
+</html>

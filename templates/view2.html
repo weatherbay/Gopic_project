@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View2</title>
+    <link rel="stylesheet" href="static/bootstrap.css" />
+    
+    <!-- main css -->
+    <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+    <section class="home_banner_area">
+        <div class ="container">          
+          <div class ="row bg-success">
+            <div class="container-fluid h-150 bg-dark text-dark">
+              <div class="row justify-content-center align-items-center">
+                {% block body %}      
+              </div>
+              <br/>
+              <div class="row justify-content-center align-items-center h-100">
+                <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                  <div class ="text-center"><h2>welcome {{session.name}}</h2></div>
+                  <h4 class="text-center">{% include "includes/msg.html" %}</h4>   
+                  
+                  
+                 
+                
+                 
+                </div>
+              </div>
+            </div>
+            <img src ="data:;base64,{{(img)}}"  class ="img-responsive img-circle pull-left" alt ="image" height ="60" width ="60">
+            </div>
+          </div>
+        </div>
+        </section> 
+        
+    
+        <script src="static/bootstrap.min.js"></script>
+        <script src="static/main.js"></script>      
+</body>
+</html>
+
+{% endblock %}
